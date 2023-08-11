@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examen Interactivo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Examen Interactivo</h1>
+  
+  <p id="countdown" style="display:none;">Tiempo restante: 30 segundos</p>
+  
+  <button id="startButton">Iniciar Cuestionario</button>
+  
+  <form id="quizForm" style="display:none;">
+    <div class="question">
+      <label for="q1">Pregunta 1: ¿Cuánto es 2 + 2?</label>
+      <select id="q1" required>
+        <option value="">Selecciona una respuesta</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="q2">Pregunta 2: ¿Quién es el mejor futbolista del mundo?</label>
+      <select id="q2" required>
+        <option value="">Selecciona una respuesta</option>
+        <option value="ronaldo">Cristiano Ronaldo</option>
+        <option value="messi">Lionel Messi</option>
+        <option value="neymar">Neymar Jr.</option>
+        <option value="mbappe">Kylian Mbappé</option>
+        <option value="hazard">Eden Hazard</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="q3">Pregunta 3: ¿Cuál es la mejor carrera?</label>
+      <select id="q3" required>
+        <option value="">Selecciona una respuesta</option>
+        <option value="ingenieria">Ingeniería en Sistemas</option>
+        <option value="medicina">Medicina</option>
+        <option value="derecho">Derecho</option>
+        <option value="arte">Arte</option>
+        <option value="economia">Economía</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="q4">Pregunta 4: ¿Cuál es la capital de Guatemala?</label>
+      <select id="q4" required>
+        <option value="">Selecciona una respuesta</option>
+        <option value="guatemala">Guatemala</option>
+        <option value="san_salvador">San Salvador</option>
+        <option value="tegucigalpa">Tegucigalpa</option>
+        <option value="managua">Managua</option>
+        <option value="belmopan">Belmopán</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="q5">Pregunta 5: ¿Cuál es la capital de Australia?</label>
+      <select id="q5" required>
+        <option value="">Selecciona una respuesta</option>
+        <option value="sidney">Sídney</option>
+        <option value="melbourne">Melbourne</option>
+        <option value="brisbane">Brisbane</option>
+        <option value="adelaide">Adelaida</option>
+        <option value="canberra">Canberra</option>
+      </select>
+    </div>
+    <button type="submit" id="submitButton" disabled>Enviar Respuestas</button>
+  </form>
+  
+  <button id="retryButton" style="display:none;">Volver a Intentar</button>
+  
+  <div id="respuestasEnviadas"></div>
+</div>
+
+<script src="formulario.js"></script>
+
+</body>
+</html>
